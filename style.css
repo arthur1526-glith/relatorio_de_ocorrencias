@@ -1,0 +1,144 @@
+/* Early 2000s Web Design CSS */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Verdana", "Arial", sans-serif;
+    background-color: #c0c0c0;
+    font-size: 12px;
+}
+
+* {
+    font-family: "Verdana", "Arial", sans-serif;
+}
+
+table {
+    border-color: #dfdfdf #808080 #808080 #dfdfdf;
+}
+
+/* Tabs */
+.tab {
+    background-color: #c0c0c0;
+    border: 2px solid;
+    border-color: #dfdfdf #808080 #808080 #dfdfdf;
+    padding: 5px 15px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 5px;
+    user-select: none;
+    transition: all 0.1s;
+}
+
+.tab:hover {
+    background-color: #dfdfdf;
+}
+
+.tab.active {
+    border-color: #dfdfdf #808080 #808080 #dfdfdf;
+    background-color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.tab-text {
+    display: block;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Tables */
+table {
+    background-color: #c0c0c0;
+}
+
+td {
+    padding: 2px;
+}
+
+/* Scrollbar styling (IE5 specific) */
+body {
+    scrollbar-3dlight-color: #dfdfdf;
+    scrollbar-arrow-color: #000000;
+    scrollbar-base-color: #c0c0c0;
+    scrollbar-darkshadow-color: #ffffff;
+    scrollbar-face-color: #c0c0c0;
+    scrollbar-highlight-color: #dfdfdf;
+    scrollbar-shadow-color: #808080;
+    scrollbar-track-color: #c0c0c0;
+}
+
+/* Buttons and inputs */
+input[type="button"],
+input[type="submit"],
+button {
+    background-color: #c0c0c0;
+    border: 2px solid;
+    border-color: #dfdfdf #808080 #808080 #dfdfdf;
+    padding: 2px 6px;
+    font-family: "MS Sans Serif", Verdana, Arial;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+button:active {
+    border-color: #808080 #dfdfdf #dfdfdf #808080;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #808080 #dfdfdf #dfdfdf #808080;
+    padding: 2px 3px;
+    font-family: "MS Sans Serif", Verdana, Arial;
+    font-size: 11px;
+    color: #000000;
+}
+
+/* Marquee - typical 2000s element */
+marquee {
+    background-color: #000080;
+    color: #ffff00;
+    padding: 5px;
+}
+
+/* Status bar look */
+.statusbar {
+    background-color: #c0c0c0;
+    border: 1px solid;
+    border-color: #dfdfdf #808080 #808080 #dfdfdf;
+    padding: 2px;
+    font-size: 11px;
+}
+
+/* Warning boxes */
+.warning {
+    background-color: #ffffcc;
+    border: 2px solid #ff0000;
+    padding: 10px;
+    margin: 10px 0;
+    font-family: "MS Sans Serif";
+}
+
+/* Error styling */
+.error {
+    color: #ff0000;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid #ff0000;
+    background-color: #ffcccc;
+}

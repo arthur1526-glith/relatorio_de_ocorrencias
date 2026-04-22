@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Portal de Dados - 2004</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="#c0c0c0">
+
+<table border="1" cellpadding="0" cellspacing="0" width="100%" height="100%">
+    <tr>
+        <td colspan="2" bgcolor="#000080" height="60">
+            <font color="#FFFF00" size="6"><b>PORTAL DE INFORMAÇÕES</b></font>
+            <br>
+            <font color="#FFFFFF" size="2">Versão 1.0 Beta - Desenvolvido em HTML/CSS 2003</font>
+        </td>
+    </tr>
+    <tr height="30">
+        <td colspan="2" bgcolor="#C0C0C0">
+            <table border="0" cellpadding="5" cellspacing="0" width="100%">
+                <tr>
+                    <td id="tab-alunos" class="tab active" onclick="showTab('alunos')">
+                        <span class="tab-text">Alunos</span>
+                    </td>
+                    <td id="tab-boletim" class="tab" onclick="showTab('boletim')">
+                        <span class="tab-text">Boletim</span>
+                    </td>
+                    <td id="tab-ocorrencias" class="tab" onclick="tryAccessOcorrencias()">
+                        <span class="tab-text strikethrough" style="color: red;">Ocorrências</span>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" height="*">
+            <div id="content">
+                <!-- ALUNOS TAB -->
+                <div id="alunos-content" class="tab-content active">
+                    <table border="1" cellpadding="10" cellspacing="0" width="100%" bgcolor="#FFFFFF">
+                        <tr bgcolor="#000080">
+                            <td><font color="#FFFF00"><b>ID</b></font></td>
+                            <td><font color="#FFFF00"><b>NOME DO ALUNO</b></font></td>
+                            <td><font color="#FFFF00"><b>STATUS</b></font></td>
+                        </tr>
+                        <tbody id="alunos-list">
+                            <!-- Preenchido por JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- BOLETIM TAB -->
+                <div id="boletim-content" class="tab-content">
+                    <div style="padding: 20px; background-color: #FFFFFF; border: 3px inset;">
+                        <p>
+                            <font face="Courier New" size="3">
+                                No momento essa aba não pode ser acessado por motivos não muito 
+                                <span id="hidden-link" onclick="accessHiddenOcorrencias()" style="cursor: pointer; color: #0000FF; text-decoration: underline;">apropriados para o site</span>
+                            </font>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- OCORRENCIAS TAB -->
+                <div id="ocorrencias-content" class="tab-content">
+                    <div id="ocorrencias-error" style="padding: 20px; background-color: #FFCCCC; border: 3px solid #FF0000;">
+                        <p>
+                            <font face="Courier New" size="4" color="#FF0000"><b>ERRO 403 - ACESSO NEGADO</b></font>
+                            <br>
+                            <font face="Courier New" size="3" color="#000000">
+                                A página de ocorrências está bloqueada por motivos de segurança.
+                                <br><br>
+                                Código de erro: ACCESS_DENIED
+                                <br>
+                                Contate o administrador do sistema.
+                            </font>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- HIDDEN OCORRENCIAS CONTENT -->
+                <div id="ocorrencias-hidden" style="display: none; background-color: #000000; color: #FF0000; padding: 30px; min-height: 600px; font-family: 'Courier New'; font-size: 12px; line-height: 1.6;">
+                    <pre id="hidden-text-content">TÍUWLP: TEHKSUTO DNATUIGKCBFO — FPTSCDB 12
+
+Q iofiwífup teggrfptf à gnutaec 12 nãp fewg mbks tgr dqntkdftaeq un clvpo dqmvo dfptsq dpu pbtâmfvrpu db Jasoooa Sdjopn. Aqóu múmviqnat veovaukvbu df eosteçãp g rfknuggscção bq sjutfoa, p tetwlucdp hoj elbusjhidcdp eonq ioutáwgl f hosc df eoovrpne.
+
+Pu rfiitvrpu iofidcm rwe p rrpeetuo jpidkam vioja dqmp qbkgtjxo qtetgrwcr b eooviowiecdf fat nitvat g ewktbt lbeuocs oqs ecdpu adcdênkcpu. Np gnucnuq, a fptscdb 12 cpsgsfptpw cpoppttboeovo bpômbno egseg o jpícjq. Fscgngnuqs eg psgsfpça gqrbo dfvedvaeqs ngsnq aqóu svc rfooçãp qfjeibn dpu assujxot.
+
+Temctóskot rotveskosgs dqngkrncm rwe p knekvíewo oãq fpk dfxiecmfptf "cpbiaeq". En xea fituo, qgrncnfeev raseibnmfptf tehksutaeq, rfuumvaofo fo unc eyksuêpcjc ioeoouitveove fptsg psgsfpça f cutêpcjc.
+
+Etvaeq auwam:
+— Pão mqcbniacdp hitkcboeove
+— Qtetgnçb feugcucdb gm mqgt g gscvbçõgs
+— Dcpbeiecdf fe jptftfftêndka fo sjutfoat ctjxot
+
+Elbusjhidcção eg rjucp: CLUC
+
+---
+
+PSQTPEOMQ DF GNDQNUTO
+
+Dcsp subnqvgr gwndkooátip qu jpdjxídvq eovrf gm dqnuctp eon uiocit cstqcjcdpu à eovrbfa 12, tggvkr joeekaucmfptf cs jpsutuçõfu acciyq:
+
+1. NÃP gsucbfnedgr dqmvpidcção ekrfva.
+2. OÃQ tfptbt cpopmgtbt fscsfu, npoet qu tgqvêpcjcs jptftrpopjfat.
+3. GVJVAS teqgtjt pbfrõfu nvoérjeot kndqmqneuqs sglbeippaeqs bq cbuo.
+4. EGSMKGBT qvclrwes fitrotktjxo rwe futfla sggjutscneq áueko pw víego oq mpoeovo.
+5. TCIS fa ásga joeekaucmfptf uen qlicr qcrb vrát.
+
+---
+
+Qbtgrwcção dtítjea:
+
+Iá kneíeipu df suf c eovrbfa 12 ugnuc rfutbwrbt svc psórrjc cpptjpujfaeg autawéu df knugrbçãq hvoaoc. Qvclrwes veovaukvb fe sgcpphfeingnuq ppfe sgsvntbt en "tejptfirbçãq pbtcjcl".
+
+Tg vpeê adteektb ves gndqnutaeq amio sglbeippaeq a futf tehksuto, OÃQ rfrosve fo sjutfoat fihgtbks.
+
+Bngvoat cutêpcjcs oãq dfxen ues rrfgndjiecs.
+
+<a href="javascript:downloadFile()" style="color: #00FF00; text-decoration: underline; cursor: pointer;">[BAIXAR ARQUIVO]</a></pre>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" bgcolor="#000080" height="40">
+            <font color="#FFFFFF" size="1">© 2004 Portal de Informações. Todos os direitos reservados. | Última atualização: 2004-03-15</font>
+        </td>
+    </tr>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
